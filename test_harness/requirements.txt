@@ -1,0 +1,9 @@
+# Packages used by validated LCB reference solutions.
+ac-library-python==0.1.0
+sortedcontainers==2.4.0
+
+# Common packages allowed by the original correctness harness.
+networkx==3.2.1
+numba==0.60.0
+numpy==1.26.4
+scipy==1.12.0

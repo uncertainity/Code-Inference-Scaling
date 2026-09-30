@@ -1,0 +1,16 @@
+# Data collection and normalization
+beautifulsoup4
+datasets
+requests
+tqdm
+
+# Generation client and configuration
+httpx
+PyYAML
+
+# Complexity metrics and analysis
+matplotlib
+numpy
+pandas
+radon
+

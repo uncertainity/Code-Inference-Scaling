@@ -1,0 +1,66 @@
+protocol: solve_at_1
+batch_size: 1000
+concurrency: 64
+
+task_paths:
+  - fair_data/subsets/humaneval_subset.jsonl
+  - fair_data/subsets/mbpp_subset.jsonl
+  - fair_data/subsets/apps_subset.jsonl
+  - fair_data/subsets/lcb_subset.jsonl
+
+sampling_configs:
+  no_thinking_greedy:
+    temperature: 0.0
+    max_tokens: 4096
+    chat_template_kwargs:
+      enable_thinking: false
+
+  no_thinking_sampled:
+    temperature: 0.2
+    top_p: 0.95
+    repetition_penalty: 1.05
+    max_tokens: 4096
+    chat_template_kwargs:
+      enable_thinking: false
+
+  thinking_greedy:
+    temperature: 0.0
+    max_tokens: 8192
+    chat_template_kwargs:
+      enable_thinking: true
+
+  thinking_sampled:
+    temperature: 0.2
+    top_p: 0.95
+    repetition_penalty: 1.05
+    max_tokens: 8192
+    chat_template_kwargs:
+      enable_thinking: true
+
+  no_thinking_qwen_recommended:
+    temperature: 0.7
+    top_p: 0.8
+    top_k: 20
+    min_p: 0.0
+    max_tokens: 4096
+    chat_template_kwargs:
+      enable_thinking: false
+
+  thinking_qwen_recommended:
+    temperature: 0.6
+    top_p: 0.95
+    top_k: 20
+    min_p: 0.0
+    max_tokens: 8192
+    chat_template_kwargs:
+      enable_thinking: true
+
+  thinking_qwen_presence_penalty:
+    temperature: 0.6
+    top_p: 0.95
+    top_k: 20
+    min_p: 0.0
+    presence_penalty: 1.0
+    max_tokens: 8192
+    chat_template_kwargs:
+      enable_thinking: true

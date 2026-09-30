@@ -1,0 +1,14 @@
+model: ./generation/models/Qwen3-0.6B
+served_model_name: Qwen3-0.6B
+host: 0.0.0.0
+port: 8000
+gpu: "4"
+dtype: auto
+tensor_parallel_size: 1
+gpu_memory_utilization: 0.95
+max_model_len: 32768
+max_num_seqs: 12
+max_num_batched_tokens: 32768
+enable_prefix_caching: true
+enable_chunked_prefill: true
+disable_log_requests: true

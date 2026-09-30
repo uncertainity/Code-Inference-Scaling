@@ -1,0 +1,5 @@
+metric,complexity_quartile,description,count,min,median,max,lower_quantile_boundary,upper_quantile_boundary
+cyclomatic,Q1,lowest complexity,1129,1.0,2.0,3.0,1.0,3.0
+cyclomatic,Q2,low-medium complexity,988,3.02,3.9130434782608696,4.666666666666667,3.0,4.666666666666667
+cyclomatic,Q3,medium-high complexity,1055,4.68,5.739130434782608,7.15625,4.666666666666667,7.15625
+cyclomatic,Q4,highest complexity,1057,7.157894736842105,9.583333333333334,114.11111111111111,7.15625,114.11111111111111

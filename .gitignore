@@ -1,0 +1,37 @@
+# Python environments and caches
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Editor and runtime noise
+.DS_Store
+*.log
+
+# Downloaded and derived benchmark data (multi-gigabyte)
+data_collection/raw/*
+!data_collection/raw/README.md
+data_collection/normalized/*.jsonl
+data_collection/reference_solutions/vendor/*
+!data_collection/reference_solutions/vendor/README.md
+fair_data/data_jsonl/*.jsonl
+!fair_data/data_jsonl/README.md
+
+# Model weights and generation artifacts
+generation/models/*
+!generation/models/README.md
+generation/runs/*
+!generation/runs/README.md
+
+# Correctness scratch output; the canonical result is under analysis/outputs/
+test_harness/results/
+
+# Local historical artifacts retained only for provenance
+legacy/cache/
+legacy/runs/
+legacy/fair_data_experiments/
+legacy/generation/runs_dummy/
+

@@ -1,0 +1,5 @@
+metric,complexity_quartile,description,count,min,median,max,lower_quantile_boundary,upper_quantile_boundary
+AST_Length,Q1,lowest complexity,1062,14.122448979591837,57.49076923076923,79.0,14.122448979591837,79.0
+AST_Length,Q2,low-medium complexity,1053,79.16,101.0,126.75,79.0,126.75
+AST_Length,Q3,medium-high complexity,1059,126.78260869565217,160.72,207.0,126.75,207.0
+AST_Length,Q4,highest complexity,1055,207.04545454545453,292.3636363636364,3212.5555555555557,207.0,3212.5555555555557
